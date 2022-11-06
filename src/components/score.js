@@ -1,12 +1,15 @@
 /* This component will keep track of how many guesses the user has left. */
+import React, { Component } from 'react';
 
 class Score extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
     }
-    state = {  }
+
     render() { 
-        return (  );
+        return (
+            <div>{this.props.score}</div>
+        );
     }
 }
 
