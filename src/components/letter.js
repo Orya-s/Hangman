@@ -1,10 +1,14 @@
+import React, { Component } from 'react';
+
 class Letter extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
     }
-    state = {  }
+    
     render() { 
-        return (  );
+        return (
+            <span className={this.props.className}>{this.props.data}</span>
+        );
     }
 }
  
