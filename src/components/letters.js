@@ -13,7 +13,7 @@ class Letters extends Component {
         let classNames = {true: "selected-letters", false: "letters"}
 
         return (
-            letters.map(l => <Letter className={classNames[letterStatus[l]]} key={l} data={l}/>)
+            letters.map(l => <Letter className={classNames[letterStatus[l]]} key={l} data={l} selectLetter={this.props.selectLetter}/>)
         );
     }
 }
