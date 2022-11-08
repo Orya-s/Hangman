@@ -53,10 +53,10 @@ class App extends Component {
       this.setState({
         score: this.state.score + GOOD_GUESS_SCORE,
         rightAnswers: this.state.rightAnswers + 1
-      }, this.checkGameStatus())
+      }, this.checkGameStatus)
     }
     else {
-      this.setState({score: this.state.score - BAD_GUESS_SCORE}, this.checkGameStatus())
+      this.setState({score: this.state.score - BAD_GUESS_SCORE}, this.checkGameStatus)
     }
   }
 
