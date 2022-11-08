@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 class Letter extends Component {
-    constructor() {
-        super();
+      
+    clickedLetter = () => {
+        this.props.selectLetter(this.props.data)
     }
-    
+
     render() { 
         return (
-            <span className={this.props.className}>{this.props.data}</span>
+            <span className={this.props.className} onClick={this.clickedLetter}>{this.props.data}</span>
         );
     }
 }
