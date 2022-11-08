@@ -19,7 +19,7 @@ class Solutioin extends Component {
                     {solution.map(w => letterStatus[w] ? <Letter key={w} data={w}/> : <Letter key={uniqeKey++} data={'__ '} />)}
                 </div>
                 <div>
-                    {this.props.solution.hint}
+                    Hint: {this.props.solution.hint}
                 </div>
             </div>
         );
