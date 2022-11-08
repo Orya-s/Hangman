@@ -3,10 +3,7 @@ import React, { Component } from 'react';
 import Letter from './Letter';
 
 class Letters extends Component { 
-    constructor() {
-        super();
-    }
-   
+
     render() {
         let letters = Object.keys(this.props.letterStatus)
         let letterStatus = this.props.letterStatus;

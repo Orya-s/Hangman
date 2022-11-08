@@ -4,10 +4,7 @@ import React, { Component } from 'react';
 import Letter from './Letter';
 
 class Solutioin extends Component {
-    constructor() {
-        super();
-    }
-    
+       
     render() { 
         let solution = this.props.solution.word.split("");
         let letterStatus = this.props.letterStatus;
