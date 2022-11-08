@@ -1,4 +1,10 @@
-
+.app {
+  text-align: center;
+}
 .selected-letters {
   text-decoration: line-through;
+}
+
+#score {
+  color: rgb(242, 226, 80);
 }
